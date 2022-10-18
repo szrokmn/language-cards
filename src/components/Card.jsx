@@ -7,12 +7,12 @@ import data from "../helpers/data"
 const Card = () => {
   return (
     <Container calassName="rounded-4 mt-4" style={{background:"#f48b29"}}>
-      <h1>Language</h1>
-      <Row>
+      <h1 className='text-white my-2'>Language</h1>
+      <Row className="g-3 justify-content-center">
         {data.map((lang) => {
           return(
-          <Col>
-             <Language key={index} {...lang}/>  
+          <Col sm={6} md={4} lg={3} key={index}>
+             <Language  {...lang}/>  
           </Col>
           )
         })}
